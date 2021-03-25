@@ -1,0 +1,20 @@
+@mixin colorir($cor, $propriedade: background, $tom: 4) {
+  @if ($tom == 1) {
+    #{$propriedade}: lighten($cor, 40%);
+  } @else if ($tom == 2) {
+    #{$propriedade}: lighten($cor, 20%);
+  } @else if ($tom == 3) {
+    #{$propriedade}: lighten($cor, 10%);
+  } @else if ($tom == 4) {
+    #{$propriedade}: lighten($cor, 0%);
+  } @else if ($tom == 5) {
+    #{$propriedade}: darken($cor, 15%);
+  } @else if ($tom == 6) {
+    #{$propriedade}: darken($cor, 20%);
+  }
+}
+
+body {
+  @include colorir(black, background, 2);
+  @include colorir(yellow, color, 2);
+}
