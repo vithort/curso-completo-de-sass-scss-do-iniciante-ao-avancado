@@ -154,3 +154,8 @@ sass -i
 @import "arquivo.scss" screen;
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 ```
+
+## Arquivos Partials
+
+Arquivos gravados com o underscore (_) no início, eles não são compilados pelo SASS
+
